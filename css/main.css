@@ -225,3 +225,22 @@ img {
     max-width: 50%;
   }
 }
+
+@media (max-width: 480px) {
+  .menu,
+  .container {
+    max-width: 450px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-nav-link {
+    font-size: 30px;
+  }
+  .footer {
+    position: static;
+    margin-top: 15px;
+  }
+  img {
+    max-width: 35%;
+  }
+}
