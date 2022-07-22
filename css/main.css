@@ -179,3 +179,49 @@ img {
   font-size: 40px;
   text-transform: uppercase;
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu,
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .container--sm {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu,
+  .container {
+    max-width: 700px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .container--sm {
+    margin-right: 100px;
+  }
+  .footer {
+    position: static;
+    margin-top: 15px;
+  }
+  img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu,
+  .container {
+    max-width: 650px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer {
+    position: static;
+    margin-top: 15px;
+  }
+  img {
+    max-width: 50%;
+  }
+}
