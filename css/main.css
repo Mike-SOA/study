@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #f6ce08;
+}
+
+img {
+  max-width: 80%;
+  padding: 10px;
+}
+
+.main-container {
+  max-width: 1980px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+.main-nav-link:hover {
+  border: solid 5px #f6ce08;
+  color: #0841dd;
+  transition: 0.5s;
+}
+.main-nav-link {
+  height: 26%;
+  font-size: 50px;
+  text-transform: uppercase;
+  border: 5px dotted #193548;
+  padding: 20px;
+  transition: 1s ease;
+}
+
+.body--blocks {
+  padding: 50px;
+  background: repeating-linear-gradient(
+      -50deg,
+      rgb(150, 210, 118),
+      #193548 25px,
+      #061341 70px
+    )
+    fixed;
+}
+
+.container {
+  height: 200px;
+  background-color: #cccccc;
+  outline: 3px solid #000000;
+  float: left;
+  margin: 0 30px 60px 0;
+  position: relative;
+}
+
+.container--sm {
+  width: 200px;
+  margin-right: 100px;
+}
+
+.container--lg {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+  background-color: #414040;
+  position: absolute;
+}
+
+.block--1 {
+  background-color: #008000;
+  top: 0;
+  left: 0;
+}
+
+.block--2 {
+  background-color: #fff;
+  top: 0;
+  left: 100px;
+}
+
+.block--3 {
+  background-color: #000;
+  top: 100px;
+  left: 0;
+}
+
+.block--4 {
+  background-color: #db3096;
+  top: 100px;
+  left: 100px;
+}
+
+.block--5 {
+  background-color: #0841dd;
+  bottom: -50px;
+  left: -50px;
+  z-index: -1;
+}
+
+.block--6 {
+  background-color: #0841dd;
+  bottom: -50px;
+  left: calc(50% - 50px);
+  z-index: 1;
+}
+
+.block--7 {
+  background-color: #0841dd;
+  bottom: -50px;
+  right: -50px;
+  z-index: -1;
+}
+
+.block-lg {
+  position: absolute;
+  background-color: #ff0000;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  flex-basis: 15%;
+  margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-item-wrapper {
+  padding: 20px;
+  background-color: darkred;
+  transition: 1s ease;
+}
+
+.menu-item-link {
+  font-size: 25px;
+  color: white;
+  padding: 3px;
+}
+
+.menu-item-container:hover {
+  outline: 1px solid black;
+}
+
+.menu-item-wrapper:hover {
+  background-color: yellow;
+  transition: 0.5s;
+}
+
+.menu-item-container:hover .menu-item-link {
+  color: black;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
